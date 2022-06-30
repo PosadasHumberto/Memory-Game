@@ -18,7 +18,10 @@ public class Carte extends javax.swing.JPanel {
     private int id;
 
     //constructor
-    public Carte() {
+    public Carte(String urlFace, String urlDos, int id) {
+        this.urlFace = urlFace;
+        this.urlDos = urlDos;
+        this.id = id;
         initComponents();
     }
     

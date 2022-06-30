@@ -19,10 +19,11 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         
         initComponents();
-        Carte maCarte = new Carte();
-        maCarte.setUrlFace("C:/Users/Humberto-PC/eclipse-workspace/MemoryGame/Photos/reverse.PNG");     //initialise l'attribut d'instance urlFace de l'objet maCarte
+        Carte maCarte = new Carte("./src/Photos/reverse.PNG", "./src/Photos/loteria01.PNG", 1);
         maCarte.affichePhoto();     
         boitePhotos.add(maCarte);
+        String directorioActual = System.getProperty("user.dir");
+        System.out.println(directorioActual);
     }
 
     /**
